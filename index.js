@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const allowedOrigins = ['http://localhost:3000','https://lovely-cannoli-fd0620.netlify.app/'];
+const allowedOrigins = ['https://lovely-cannoli-fd0620.netlify.app','http://localhost:3000'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
